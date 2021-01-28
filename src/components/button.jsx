@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames'
+import PropTypes from 'prop-types';
 
 function Button(props){
     console.log(props)
@@ -11,4 +12,9 @@ function Button(props){
     })}>{props.children}</button>
     );
 }
+
+Button.propTypes = {
+    onClick: PropTypes.func,
+  };
+
 export default Button;
